@@ -12,12 +12,9 @@ VANTA.BIRDS({
     colorMode: "variance",
 });
 
-const text =
-    "A Russian developer with expertise in C++,  \nC#, and JavaScript, I also have experience with \nframeworks like .NET, React, React Native, and Express.js.";
-let index = 0;
-const typingTextElement = document.getElementById("about-me");
+function typeAboutMe(index, text) {
+    const typingTextElement = document.getElementById("about-me");
 
-function typeAboutMe() {
     if (index < text.length) {
         if (text.charAt(index) === "\n") {
             typingTextElement.innerHTML += "<br>";
@@ -25,11 +22,14 @@ function typeAboutMe() {
             typingTextElement.innerHTML += text.charAt(index);
         }
         index++;
-        setTimeout(typeAboutMe, 50);
+        setTimeout(() => typeAboutMe(index, text), 20);
     }
 }
 
-typeAboutMe();
+const textAboutMe =
+    "A Russian developer with expertise in C++,  \nC#, and JavaScript. I also have experience with \nframeworks like .NET, React, React Native, and Express.js";
+
+typeAboutMe(0, textAboutMe);
 
 function copyToClipboard(text) {
     navigator.clipboard
@@ -56,3 +56,25 @@ document
         event.preventDefault();
         copyToClipboard("x3wnl0x");
     });
+
+function typeAndErase(index, text) {
+    const title = document.getElementById("title");
+    const words = text.split(" ");
+
+    if (index < words.length) {
+        let currentText = " " + words[index];
+        title.innerHTML += currentText;
+
+        index++;
+
+        setTimeout(() => {
+            title.innerHTML = "nezilot";
+
+            setTimeout(() => typeAndErase(index, text), 500);
+        }, 1000);
+    } else {
+        typeAndErase(0, text);
+    }
+}
+
+typeAndErase(0, ":D xD =D");
