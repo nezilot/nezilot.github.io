@@ -139,13 +139,13 @@ html {
     position: absolute;
     display: flex;
     flex-direction: column;
-    padding-top: 10%;
+    padding-top: 15%;
     align-items: center;
 }
 
 .intro h1 {
     font-family: "Roboto Mono", monospace;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     color: #f5f0f0;
     margin-bottom: 20px;
@@ -161,7 +161,7 @@ html {
 
 .navbar {
     border-radius: 10px;
-    padding: 15px 16px 10px 16px;
+    padding: 16px;
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     bottom: 10px;
@@ -183,9 +183,22 @@ html {
         transform 0.3s ease;
 }
 
+.navbar ul li {
+    width: 30px;
+    height: 30px;
+}
+
 .navbar ul li a i {
+    display: inline-flex;
+    align-items: center;
     font-size: 30px;
     color: #e3e5e8;
+}
+
+.navbar ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar ul li a:hover {
@@ -195,7 +208,7 @@ html {
 .tooltip {
     opacity: 0;
     position: absolute;
-    bottom: 150%;
+    bottom: 165%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
@@ -222,13 +235,117 @@ html {
 #notification {
     display: none;
     position: fixed;
-    top: 10px;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
     font-family: "Roboto Mono", monospace;
     color: white;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 12px;
     z-index: 1000;
+    border: 3px solid rgba(0, 128, 0, 0.9);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.discord-server {
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.discord-server img {
+    border-radius: 15px;
+    width: 60px;
+}
+
+.discord-server p {
+    color: white;
+    padding: 10px;
+    font-family: "Roboto Mono", monospace;
+    transition: 0.3s;
+}
+
+.discord-server p:hover {
+    animation: glitch 0.1s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* adaptive  */
+
+/* mobile */
+
+@media (max-width: 425px) {
+    .intro {
+        padding-top: 30%;
+    }
+
+    .intro h1 {
+        font-size: 45px;
+    }
+
+    .intro h2 {
+        font-size: 24px;
+    }
+
+    .discord-server {
+        padding: 4px;
+    }
+
+    .discord-server img {
+        width: 55px;
+    }
+}
+
+@media (max-width: 360px) {
+    .intro {
+        padding-top: 45%;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    #notification {
+        font-size: 13px;
+    }
+
+    .discord-server {
+        padding: 4px;
+    }
+
+    .discord-server img {
+        width: 50px;
+    }
 }
