@@ -1,14 +1,14 @@
 /* Reset and base styles  */
 * {
-    padding: 0px;
-    margin: 0px;
-    border: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Links */
@@ -16,11 +16,11 @@
 a,
 a:link,
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Common */
@@ -31,7 +31,7 @@ footer,
 header,
 section,
 main {
-    display: block;
+  display: block;
 }
 
 h1,
@@ -41,27 +41,27 @@ h4,
 h5,
 h6,
 p {
-    font-size: inherit;
-    font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 ul,
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 img,
 svg {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 /* Form */
@@ -70,232 +70,204 @@ input,
 textarea,
 button,
 select {
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 
 input::-ms-clear {
-    display: none;
+  display: none;
 }
 
 button,
 input[type="submit"] {
-    display: inline-block;
-    box-shadow: none;
-    background-color: transparent;
-    background: none;
-    cursor: pointer;
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
 }
 
 input:focus,
 input:active,
 button:focus,
 button:active {
-    outline: none;
+  outline: none;
 }
 
 button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
 }
 
 label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 legend {
-    display: block;
+  display: block;
 }
 
 input[type="file"] {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* reset css  */
 
 body,
 html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 #background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 .intro {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(30, 30, 30, 0.2);
-    z-index: 1;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding-top: 15%;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.2);
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15%;
+  align-items: center;
 }
 
 .intro h1 {
-    font-family: "Roboto Mono", monospace;
-    font-size: 50px;
-    font-weight: 500;
-    color: #f5f0f0;
-    margin-bottom: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 50px;
+  font-weight: 500;
+  color: #f5f0f0;
+  margin-bottom: 20px;
 }
 
 .intro h2 {
-    font-weight: 400;
-    color: #cbd4cd;
-    font-size: 25px;
-    font-family: "Roboto Mono", monospace;
-    text-align: center;
+  font-weight: 400;
+  color: #cbd4cd;
+  font-size: 25px;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
 }
 
 .navbar {
-    border-radius: 10px;
-    padding: 16px;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    bottom: 10px;
-    display: flex;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 10px;
+  display: flex;
 }
 
 .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
 }
 
 .navbar ul li a {
-    display: inline-block;
-    transition:
-        color 0.3s ease,
-        transform 0.3s ease;
+  display: inline-block;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .navbar ul li {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .navbar ul li a i {
-    display: inline-flex;
-    align-items: center;
-    font-size: 30px;
-    color: #e3e5e8;
+  display: inline-flex;
+  align-items: center;
+  font-size: 30px;
+  color: #e3e5e8;
 }
 
 .navbar ul li a {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar ul li a:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .tooltip {
-    opacity: 0;
-    position: absolute;
-    bottom: 165%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-    font-family: "Roboto Mono", monospace;
-    transition:
-        opacity 0.7s ease,
-        visibility 0.7s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 165%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  font-family: "Roboto Mono", monospace;
+  transition:
+    opacity 0.7s ease,
+    visibility 0.7s ease;
 }
 
 .navbar li:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .navbar li {
-    position: relative;
+  position: relative;
 }
 
 #notification {
-    display: none;
-    position: fixed;
-    bottom: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    font-family: "Roboto Mono", monospace;
-    color: white;
-    padding: 10px;
-    border-radius: 12px;
-    z-index: 1000;
-    border: 3px solid rgba(0, 128, 0, 0.9);
-    border-width: 1px;
-    border-style: solid;
-}
-
-.discord-server {
-    user-select: none;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-.discord-server img {
-    border-radius: 15px;
-    width: 60px;
-}
-
-.discord-server p {
-    color: white;
-    padding: 10px;
-    font-family: "Roboto Mono", monospace;
-    transition: 0.3s;
-}
-
-.discord-server p:hover {
-    animation: glitch 0.1s infinite;
+  display: none;
+  position: fixed;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  z-index: 1000;
+  border: 3px solid rgba(0, 128, 0, 0.9);
+  border-width: 1px;
+  border-style: solid;
 }
 
 @keyframes glitch {
-    0% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translate(-2px, 2px);
-    }
-    40% {
-        transform: translate(-2px, -2px);
-    }
-    60% {
-        transform: translate(2px, 2px);
-    }
-    80% {
-        transform: translate(2px, -2px);
-    }
-    100% {
-        transform: translate(0);
-    }
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 /* adaptive  */
@@ -303,49 +275,33 @@ html {
 /* mobile */
 
 @media (max-width: 425px) {
-    .intro {
-        padding-top: 30%;
-    }
+  .intro {
+    padding-top: 30%;
+  }
 
-    .intro h1 {
-        font-size: 45px;
-    }
+  .intro h1 {
+    font-size: 45px;
+  }
 
-    .intro h2 {
-        font-size: 24px;
-    }
-
-    .discord-server {
-        padding: 4px;
-    }
-
-    .discord-server img {
-        width: 55px;
-    }
+  .intro h2 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 360px) {
-    .intro {
-        padding-top: 45%;
-    }
+  .intro {
+    padding-top: 45%;
+  }
 
-    .intro h1 {
-        font-size: 40px;
-    }
+  .intro h1 {
+    font-size: 40px;
+  }
 
-    .intro h2 {
-        font-size: 20px;
-    }
+  .intro h2 {
+    font-size: 20px;
+  }
 
-    #notification {
-        font-size: 13px;
-    }
-
-    .discord-server {
-        padding: 4px;
-    }
-
-    .discord-server img {
-        width: 50px;
-    }
+  #notification {
+    font-size: 13px;
+  }
 }
