@@ -236,6 +236,10 @@ html {
   position: relative;
 }
 
+.fi-brands-discord {
+  cursor: pointer;
+}
+
 #notification {
   display: none;
   position: fixed;
@@ -307,5 +311,9 @@ html {
 
   #notification {
     font-size: 13px;
+  }
+
+  #about-me {
+    width: 80%;
   }
 }
