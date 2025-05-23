@@ -32,14 +32,9 @@ const textAboutMe =
 typeAboutMe(0, textAboutMe);
 
 function copyToClipboard(text) {
-    navigator.clipboard
-        .writeText(text)
-        .then(() => {
-            showNotification();
-        })
-        .catch((err) => {
-            console.error("Ошибка при копировании: ", err);
-        });
+    navigator.clipboard.writeText(text).then(() => {
+        showNotification();
+    });
 }
 
 function showNotification() {
