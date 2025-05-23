@@ -27,7 +27,7 @@ function typeAboutMe(index, text) {
 }
 
 const textAboutMe =
-  "Russian developer with expertise in Go,  \nC#, and JavaScript. I also have experience with \nframeworks like .NET, Gin, React, React Native, and Express.js";
+  "Russian developer with expertise in Go, C#, and JavaScript. I also have experience with frameworks like .NET, Gin, React, React Native, and Express.js";
 
 typeAboutMe(0, textAboutMe);
 
@@ -37,11 +37,20 @@ function copyToClipboard(text) {
   });
 }
 
-function showNotification() {
+function showNotification(message = "Successfully copied") {
   const notification = document.getElementById("notification");
+  notification.textContent = message;
   notification.style.display = "block";
+
   setTimeout(() => {
-    notification.style.display = "none";
+    notification.classList.add("show");
+  }, 10);
+
+  setTimeout(() => {
+    notification.classList.remove("show");
+    setTimeout(() => {
+      notification.style.display = "none";
+    }, 300);
   }, 3000);
 }
 
@@ -63,7 +72,7 @@ function typeAndErase(index, text) {
     index++;
 
     setTimeout(() => {
-      title.innerHTML = "nezilot";
+      title.innerHTML = "Nezilot";
 
       setTimeout(() => typeAndErase(index, text), 500);
     }, 1000);
