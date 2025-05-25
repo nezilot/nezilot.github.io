@@ -1,14 +1,15 @@
 VANTA.BIRDS({
   el: "#background",
-  mouseControls: true,
+backgroundColor: 0x000000,
+	mouseControls: true,
   touchControls: true,
   gyroControls: false,
   minHeight: 200.0,
   minWidth: 200.0,
   scale: 1.0,
   scaleMobile: 1.0,
-  color1: `#ff0101`,
-  color2: `#9500ff`,
+  color1: `#fff`,
+  color2: `#fff`,
   colorMode: "variance",
 });
 

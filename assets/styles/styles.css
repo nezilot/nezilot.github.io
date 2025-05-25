@@ -134,12 +134,9 @@ html {
 .intro {
   width: 100%;
   height: 100%;
-  background-color: rgba(30, 30, 30, 0.2);
-  z-index: 1;
-  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  padding-top: 15%;
   align-items: center;
 }
 
@@ -169,7 +166,8 @@ html {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 10px;
-  display: flex;
+  display: flex; 
+  border: 1px solid #d4c2c1;
 }
 
 .navbar ul {
@@ -283,40 +281,73 @@ html {
   }
 }
 
+.intro-main {
+	border-radius: 20px;
+	padding: 40px;
+	margin-top: 9%;
+	display: flex;
+	z-index: 1;
+	max-width: 60%;
+	min-width: 60%;
+	min-height: 40%;
+	flex-direction: column;
+	align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid #d4c2c1;
+}
+
 /* adaptive  */
 
 /* mobile */
 
 @media (max-width: 425px) {
   .intro {
-    padding-top: 30%;
+    padding-top: 20%;
   }
 
   .intro h1 {
-    font-size: 45px;
-  }
-
-  .intro h2 {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 360px) {
-  .intro {
-    padding-top: 45%;
-  }
-
-  .intro h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .intro h2 {
     font-size: 20px;
   }
 
-  #notification {
+.intro-main {
+	margin-top: 0;
+	min-width: 70%;
+	max-width: 70;
+	padding: 20px;
+
+}
+
+#about-me {
+	width: 80%;
+}
+
+}
+
+@media (max-width: 360px) {  .intro {
+    padding-top: 20%;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro h2 {
+    font-size: 20px;
+  }  #notification {
     font-size: 13px;
   }
+
+.intro-main {
+	margin-top: 0;
+	min-width: 70%;
+	max-width: 70;
+	padding: 20px;
+
+}
 
   #about-me {
     width: 80%;
